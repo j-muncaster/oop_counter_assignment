@@ -1,0 +1,98 @@
+header {
+  background-color: #99b0ed;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.text-con {
+  background-color: #fffaed;
+  border: 3px solid #d1d161;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px;
+  line-height: 1.6;
+
+  &:hover {
+    background-color: #cddbf9;
+    border: 3px solid #99b0ed;
+    cursor: not-allowed;
+  }
+}
+
+.text-con br {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.example-con {
+  background-color: #FFFAED;
+  border: 3px solid #D1D161;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px 0;
+  color: #0047AB;
+  line-height: 1.6;
+}
+
+.example-con h3 {
+  font-family: 'Cabin', sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #0073E6;
+}
+
+.example-con br {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.example-con p {
+  margin: 0;
+  font-size: 16px;
+  color: #ff7d59;
+}
+
+#parameters ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+#parameters ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  position: relative;
+}
+
+#parameters ul li::marker {
+  color: #ff7d59;
+  font-weight: bold;
+}
+
+#parameters ul ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+#live-demo {
+  background-color: #fff;
+  border: 3px solid #d1d161;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px;
+  line-height: 1.6;
+}
+
+#live-demo br {
+  display: block;
+  margin-bottom: 14px;
+}
+
+footer {
+  background-color: #cddbf9;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  margin-top: 80px;
+}

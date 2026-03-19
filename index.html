@@ -19,36 +19,38 @@
     </header>
 
     <h1 class="hidden"></h1>
-    <section id="overview">
+    <section id="overview" class="text-con">
             <h2>Overview</h2>
                 <p>The Counter component is a JavaScript class designed to manage a numeric value and its related user interface controls. It captures the counter’s state and behavior within a single object, allowing the component to handle user interactions, state updates, and DOM rendering internally.<br>
                     The component provides controls to increment, decrement, and reset the current value while ensuring the count never drops below zero. When the value reaches zero, the decrement and reset buttons automatically become inactive through a conditional CSS class, providing clear visual feedback to the user.<br>
-                    Each counter instance maintains its own state, allowing multiple independent counters to be instantiated on the same page without conflicts.<br>
+                    Each counter instance maintains its own state, allowing multiple independent counters to be instantiated on the same page without conflicts.
                     An additional StepCounter class extends the base Counter component to demonstrate inheritance and polymorphism. This extended component introduces a configurable step parameter that determines how much the counter increases or decreases during each action.<br>
                     Together, these components demonstrate key JavaScript concepts including encapsulation, class inheritance, state-driven UI updates, and modular component design.
                 </p>
     </section>
 
     <section id="how-to">
-        <h2>How to Use It</h2>
-            <p>The Counter component is designed to be easily instantiated inside any HTML container. Each counter manages its own state and UI, allowing multiple counters to exist independently on the same page.<br>
-                To use the component, create a container element in your HTML and then instantiate the Counter class in JavaScript, passing the container selector and optional parameters.
-            </p>
+        <div  class="text-con">
+            <h2>How to Use It</h2>
+                <p>The Counter component is designed to be easily instantiated inside any HTML container. Each counter manages its own state and UI, allowing multiple counters to exist independently on the same page.<br>
+                    To use the component, create a container element in your HTML and then instantiate the Counter class in JavaScript, passing the container selector and optional parameters.
+                </p>
+        </div>    
 
-        <div id="example-html">
+        <div id="example-html" class="text-con">
             <h3>Example HTML Container</h3>
                 <p>Create an empty container where the counter will be rendered.<br></p>
                     <div class="example-con">
                         <p>
-                        <div id="counter1"></div><br>
-                        <div id="counter2"></div><br>
-                        <div id="counter3"></div><br>
+                        < div id="counter1">< /div><br>
+                        < div id="counter2">< /div><br>
+                        < div id="counter3">< /div><br>
                         </p>
                     </div>
                 <p>The Counter class will mount the UI elements (buttons and display) inside these containers.</p>
         </div>
 
-        <div id="example-js">
+        <div id="example-js" class="text-con">
             <h3>Example JavaScript Instantiation Code</h3>
                 <p>Each instance operates independently and manages its own state and DOM updates.<br></p>
                     <div class="example-con">
@@ -63,22 +65,21 @@
                     </div>  
         </div>
 
-        <div id="parameters">
+        <div id="parameters" class="text-con">
             <h3>Parameters</h3>
                 <p>The counter uses state-driven UI updates to ensure the interface always reflects the current value.<br>
                     Key behaviors include :
                 </p>
-                    <li>
-                        <ul>The counter cannot go below 0</ul>
-                        <ul>The decrement() method prevents negative values</ul>
-                        <ul>When the value equals 0, a CSS class is applied to:<br>
-                            the decrement button<br>
-                            <br>the reset button<br>
-                        </ul>
-                        <ul>the use of the StepCounter class</ul>
-                        <ul>The reset button returns the value to 0 and logs<br>
-                            "Reset Activated." to the console</ul>
-                    </li>
+                    <ul>
+                        <li>The counter cannot go below 0</li>
+                        <li>The decrement() method prevents negative values</li>
+                        <li>When the value equals 0, a CSS class is applied to:<br>
+                            - the Decrement button<br>
+                            - the Reset button<br>
+                        </li>
+                        <li>the use of the StepCounter class</li>
+                        <li>The reset button returns the value to 0 and logs : "Reset Activated." to the console</li>
+                    </ul>
         </div>
     </section>
 
