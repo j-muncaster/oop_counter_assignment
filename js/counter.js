@@ -8,8 +8,12 @@ export class Counter {
 
     mount() {
         const container = document.querySelector(this.selector);
-
+        
         this.display = document.createElement("div");
+
+        this.buttonCon = document.createElement("div");
+        this.buttonCon.classList.add("counter-buttons");
+
         this.incrementBtn = document.createElement("button");
         this.decrementBtn = document.createElement("button");
         this.resetBtn = document.createElement("button");
@@ -18,17 +22,20 @@ export class Counter {
         this.decrementBtn.textContent = "Decrement";
         this.resetBtn.textContent = "Reset";
 
+
+        this.buttonCon.appendChild(this.incrementBtn);
+        this.buttonCon.appendChild(this.decrementBtn);
+        this.buttonCon.appendChild(this.resetBtn);
+
         container.appendChild(this.display);
-        container.appendChild(this.incrementBtn);
-        container.appendChild(this.decrementBtn);
-        container.appendChild(this.resetBtn);
+        container.appendChild(this.buttonCon);
 
         this.incrementBtn.addEventListener("click", () => this.increment());
         this.decrementBtn.addEventListener("click", () => this.decrement());
         this.resetBtn.addEventListener("click", () => this.reset());
 
         this.update();
-    }
+}
 
     increment() {
         this.count++;
@@ -49,6 +56,9 @@ export class Counter {
 
     update() {
         this.display.textContent = `Count: ${this.count}`;
+
+        this.resetBtn.disabled = this.count === this.initialValue;
+        this.decrementBtn.disabled = this.count <= this.initialValue;
     }
 }
 
