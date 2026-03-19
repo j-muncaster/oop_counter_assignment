@@ -1,6 +1,7 @@
 export class Counter {
     constructor(selector, initialValue = 0) {
         this.count = initialValue;
+        this.initialValue = initialValue;
         this.selector = selector;
         this.mount();
     }
@@ -42,7 +43,7 @@ export class Counter {
     }
 
     reset() {
-        this.count = 0;
+        this.count = this.initialValue;
         this.update();
     }
 
@@ -51,8 +52,8 @@ export class Counter {
     }
 }
 
-class StepCounter extends Counter {
-    constructor(selector, initialValue = 0, step = 1) {
+export class StepCounter extends Counter {
+    constructor(selector, initialValue = 5, step = 5) {
         super(selector, initialValue);
         this.step = step;
     }
@@ -64,6 +65,11 @@ class StepCounter extends Counter {
 
     decrement() {
         this.count -= this.step;
+        this.update();
+    }
+
+    reset() {
+        this.count = this.initialValue;
         this.update();
     }
 }
