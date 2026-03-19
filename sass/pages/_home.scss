@@ -11,12 +11,6 @@ header {
   padding: 30px;
   margin: 40px;
   line-height: 1.6;
-
-  &:hover {
-    background-color: #cddbf9;
-    border: 3px solid #99b0ed;
-    cursor: not-allowed;
-  }
 }
 
 .text-con br {
@@ -25,20 +19,11 @@ header {
 }
 
 .example-con {
-  background-color: #FFFAED;
-  border: 3px solid #D1D161;
+  background-color: #cddbf9;
   border-radius: 12px;
   padding: 30px;
   margin: 20px 0;
-  color: #0047AB;
   line-height: 1.6;
-}
-
-.example-con h3 {
-  font-family: 'Cabin', sans-serif;
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #0073E6;
 }
 
 .example-con br {
@@ -49,7 +34,8 @@ header {
 .example-con p {
   margin: 0;
   font-size: 16px;
-  color: #ff7d59;
+  color: #606f98;
+  font-weight: bold;
 }
 
 #parameters ul {
@@ -61,6 +47,8 @@ header {
 #parameters ul li {
   margin-bottom: 10px;
   font-size: 16px;
+  font-weight: bold;
+  color: #606f98;
   position: relative;
 }
 
