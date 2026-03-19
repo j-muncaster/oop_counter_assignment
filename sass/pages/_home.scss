@@ -1,3 +1,10 @@
+body {
+  background-image: url('../images/pattern.svg');
+  background-repeat: repeat;
+  background-size: 600px 600px;
+  background-position: 0 0;
+}
+
 header {
   background-color: #99b0ed;
   text-align: center;
@@ -9,8 +16,9 @@ header {
   border: 3px solid #d1d161;
   border-radius: 12px;
   padding: 30px;
-  margin: 40px;
+  margin: 40px 60px;
   line-height: 1.6;
+  opacity: 95%;
 }
 
 .text-con br {
@@ -70,6 +78,7 @@ header {
   padding: 30px;
   margin: 40px;
   line-height: 1.6;
+  opacity: 95%;
 }
 
 #live-demo br {
