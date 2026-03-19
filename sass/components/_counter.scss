@@ -9,7 +9,7 @@
 .counter {
   background-color: #fffaed;
   color: #d1d161;
-  border: 2px solid #d1d161;
+  border: 3px solid #d1d161;
   border-radius: 12px;
   padding: 30px;
   text-align: center;
@@ -33,9 +33,9 @@
   }
 
   &:hover {
-    background-color: #99b0ed;
-    color: #fffaed;
-    border: 2px solid #2c2c34;
+    background-color: #cddbf9;
+    color: #2c2c43;
+    border: 3px solid #99b0ed;
     cursor: pointer;
   }
 }
@@ -50,6 +50,7 @@
     padding: 12px 25px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 8px;
     background-color: #ff7d59;
     color: #fffaed;
@@ -57,7 +58,7 @@
     transition: all 0.3s ease;
 
     &:hover:not(:disabled) {
-      background-color: #ffe5e0;
+      background-color: #99b0ed;
       color: #2c2c34;
     }
 
