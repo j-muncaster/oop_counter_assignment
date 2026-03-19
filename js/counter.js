@@ -59,6 +59,11 @@ export class Counter {
 
         this.resetBtn.disabled = this.count === this.initialValue;
         this.decrementBtn.disabled = this.count <= this.initialValue;
+
+        gsap.fromTo(this.display, 
+            { scale: 0.8, color: "#0073E6" }, 
+            { scale: 1, color: "#0047AB", duration: 0.3, ease: "elastic.out(1, 0.5)" }
+            );
     }
 }
 
@@ -83,3 +88,8 @@ export class StepCounter extends Counter {
         this.update();
     }
 }
+
+document.querySelectorAll(".counter button").forEach(btn => {
+  btn.addEventListener("mouseenter", () => gsap.to(btn, { scale: 1.05, duration: 0.2 }));
+  btn.addEventListener("mouseleave", () => gsap.to(btn, { scale: 1, duration: 0.2 }));
+});
